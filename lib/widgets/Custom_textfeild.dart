@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomTextFeild extends StatelessWidget {
-  CustomTextFeild({required this.tittle});
+  CustomTextFeild({required this.tittle, this.maxlines = 1});
   String? tittle;
+  int? maxlines;
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +14,14 @@ class CustomTextFeild extends StatelessWidget {
         focusedBorder: buildborder(Color(0xff62FCD7)),
         border: buildborder(),
         hint: Padding(
-          padding: const EdgeInsets.all(12),
-          child: Text(tittle!, style: TextStyle(fontSize: 20)),
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Text(
+            tittle!,
+            style: TextStyle(color: Colors.grey, fontSize: 20),
+          ),
         ),
       ),
+      maxLines: maxlines,
     );
   }
 }
