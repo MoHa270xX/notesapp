@@ -12,7 +12,7 @@ class EditVeiwBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 60),
-          CustomAppBar(tittle: "Edit Note", icon: Icons.done),
+          CustomAppBar(title: "Edit Note", icon: Icons.done),
           SizedBox(height: 50),
           CustomTextFeild(tittle: "tittle"),
           SizedBox(height: 16),

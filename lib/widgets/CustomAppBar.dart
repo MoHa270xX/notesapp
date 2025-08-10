@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:noteapp/widgets/Customiconsearch.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.tittle, required this.icon});
-  final String tittle;
+  const CustomAppBar({super.key, required this.title, required this.icon});
+  final String title;
   final IconData icon;
 
   @override
@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8),
       child: Row(
         children: [
-          Text(tittle, style: TextStyle(fontSize: 26)),
+          Text(title, style: TextStyle(fontSize: 26)),
           Spacer(),
           CustomIconSearch(icon: icon),
         ],
